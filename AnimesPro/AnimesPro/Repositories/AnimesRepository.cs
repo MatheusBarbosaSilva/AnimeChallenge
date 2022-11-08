@@ -31,6 +31,11 @@ namespace AnimesPro.Repositories
         {
             try
             {
+                if (anime.Name == null || anime.Summary == null || anime.Director == null)
+                {
+                    return false;
+                }
+
                 var anime_db = new Animes()
                 {
                     Name = anime.Name,
