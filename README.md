@@ -16,7 +16,7 @@ realizar update do anime e realizar a exclusão lógica do anime.
 * Swagger
 * MSTEST - para testes unitário (incompleto).
 
-<h2> Rodar SqlServer no Docker <h2>: 
+<h2> Rodar SqlServer no Docker: <h2> 
 
 * Necessario tem o Docker instalado na máquina.
 * Comando Necessários (Windows):
