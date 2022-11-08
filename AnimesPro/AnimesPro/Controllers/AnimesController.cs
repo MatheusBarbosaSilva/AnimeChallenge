@@ -15,6 +15,16 @@ namespace AnimesPro.Controllers
             repos = _repos;
         }
 
+        [HttpGet("pagination")]
+        public IActionResult GetPagination([FromQuery] int skip = 0, [FromQuery] int take = 25)
+        {
+            if(take > 1000)
+            {
+                return BadRequest("It is not possible to return more than 1000 items");
+            }
+            var animes = repos.GetPagination(skip, take);
+            return Ok(animes);
+        }
 
         [HttpGet("get-director")]
         public IActionResult GetAnimeByDirector([FromHeader] string director)
