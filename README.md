@@ -10,7 +10,22 @@ realizar update do anime e realizar a exclusão lógica do anime.
 
 * .Net 6
 * C#
+* Docker
 * Entity FrameWork Core
 * SqlServer
 * Swagger
 * MSTEST - para testes unitário (incompleto).
+
+<h3> Rodar SqlServer no Docker <h3> 
+
+* Necessario tem o Docker instalado na máquina.
+* Comando Necessários (Windows):
+  Obter imagem - docker pull mcr.microsoft.com/mssql/server
+  Rodar o SqlServer - docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=1q2w3e4r@#$" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+  
+* Se estiver rodando o **WSL 2**:
+  Rodar o SqlServer - docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=1q2w3e4r@#$" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+  
+* Connection String:
+  Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$
+  
