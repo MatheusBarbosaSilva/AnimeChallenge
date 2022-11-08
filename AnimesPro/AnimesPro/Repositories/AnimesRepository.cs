@@ -52,7 +52,7 @@ namespace AnimesPro.Repositories
         {
             try
             {
-                return db.animes.Where(x => x.Director == director).ToList();
+                return db.animes.Where(x => x.Director == director.ToLower()).ToList();
             }
             catch
             {
@@ -64,7 +64,7 @@ namespace AnimesPro.Repositories
         {
             try
             {
-                return db.animes.Where(x => x.Name == name).ToList();
+                return db.animes.Where(x => x.Name == name.ToLower()).ToList();
             }
             catch
             {
