@@ -3,7 +3,8 @@ using AnimesPro.Models;
 using AnimesPro.Models.Entities.Animes;
 using System.IO;
 using System.Xml.Linq;
-
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace AnimesPro.Repositories
 {
@@ -15,6 +16,7 @@ namespace AnimesPro.Repositories
         public List<Animes> GetAnimeByWord(string word);
         public bool UpdateAnime(UpdateAnimesRequest anime);
         public bool DeleteAnime(int id);
+        public object GetPagination(int skip, int take);
     }
 
     public class AnimesRepository : IAnimesRepository
@@ -118,6 +120,18 @@ namespace AnimesPro.Repositories
                 return false;
             }
         }
+
+        public  object GetPagination(int skip, int take)
+        {
+            var total = db.animes.Count();
+            var animes = db.animes.AsNoTracking()
+                .Skip(skip)
+                .Take(take)
+                .ToList();
+
+            return (new { animes, total });
+        }
+
     }
 }
 
