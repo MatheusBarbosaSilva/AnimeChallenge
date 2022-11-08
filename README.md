@@ -6,7 +6,7 @@ O Cenário utilizado é o registro de animes, onde podemos inserir seu nome, sum
 realizar páginação dos animes registrados no banco de dados, pesquisar o anime por nome, sumário ou autor,
 realizar update do anime e realizar a exclusão lógica do anime.
 
-<h3> Tecnologias Utilizadas: </h3>
+<h2> Tecnologias Utilizadas: </h2>
 
 * .Net 6
 * C#
@@ -16,7 +16,7 @@ realizar update do anime e realizar a exclusão lógica do anime.
 * Swagger
 * MSTEST - para testes unitário (incompleto).
 
-<h3> Rodar SqlServer no Docker <h3> 
+<h2> Rodar SqlServer no Docker <h2>: 
 
 * Necessario tem o Docker instalado na máquina.
 * Comando Necessários (Windows):
