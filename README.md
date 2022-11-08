@@ -1,6 +1,6 @@
 # AnimeChallenge
 
-<h2> O Projeto tem como objetivo realizar os comandos CRUD, utilizando os padrões da API REST.</h2>
+<h2> O Projeto tem como objetivo realizar as operações CRUD, utilizando os padrões da API REST.</h2>
 
 O Cenário utilizado é o registro de animes, onde podemos inserir seu nome, sumário e autor, 
 realizar páginação dos animes registrados no banco de dados, pesquisar o anime por nome, sumário ou autor,
