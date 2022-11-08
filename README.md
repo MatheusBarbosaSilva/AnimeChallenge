@@ -29,3 +29,4 @@ realizar update do anime e realizar a exclusão lógica do anime.
 * Connection String:
   Server=localhost,1433;Database=balta;User ID=sa;Password=1q2w3e4r@#$
   
+<h1> **Aplicação disponibiliza Swagger para realização dos testes** <h1>
