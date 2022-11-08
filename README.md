@@ -13,3 +13,4 @@ realizar update do anime e realizar a exclusão lógica do anime.
 * Entity FrameWork Core
 * SqlServer
 * Swagger
+* MSTEST - para testes unitário (incompleto).
