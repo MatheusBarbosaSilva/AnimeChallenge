@@ -21,12 +21,12 @@ realizar update do anime e realizar a exclusão lógica do anime.
 * Necessario tem o Docker instalado na máquina.
 * Comando Necessários (Windows):
   Obter imagem - docker pull mcr.microsoft.com/mssql/server
-  Rodar o SqlServer - docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=1q2w3e4r@#$" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+  Rodar o SqlServer - docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=[senha]" -p 1433:1433 -d mcr.microsoft.com/mssql/server
   
 * Se estiver rodando o **WSL 2**:
-  Rodar o SqlServer - docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=1q2w3e4r@#$" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+  Rodar o SqlServer - docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=[senha]" -p 1433:1433 -d mcr.microsoft.com/mssql/server
   
 * Connection String:
-  Server=localhost,1433;Database=Banco_Animes;User ID=sa;Password=1q2w3e4r@#$
+  Server=localhost,1433;Database=Banco_Animes;User ID=sa;Password=[senha]
   
 <h1> Aplicação disponibiliza Swagger para realização dos testes <h1>
